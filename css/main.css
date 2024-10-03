@@ -1,0 +1,109 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", system-ui;
+    background-color: hsl(217, 54%, 11%);
+}
+.card{
+    padding: 2em;
+    width: 70%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+}
+.card-img{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    background-image: url('../img/image-equilibrium.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    z-index: 1000;
+}
+.card-title{
+    padding: 1em 0;
+}
+.card-title h1{
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+.card-text{
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: hsl(215, 32%, 27%);
+}
+.card-value{
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+.value{
+    display: flex;
+    align-items: center;
+}
+.value p{
+    margin-left: .5em;
+    font-size: 1.6rem;
+    color: hsl(178, 100%, 50%);
+}
+.date-value{
+    display: flex;
+    align-items: center;
+}
+.date-value p{
+    margin-left: 0.5em;
+    font-size: 1.6rem;
+    color:hsl(215, 51%, 70%);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+}
+.card-creation{
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+}
+.card-creation img{
+    width: 15%;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.card-creation p{
+    margin-left: 1em;
+    font-size: 1.6rem;
+    color: hsl(215, 32%, 27%);
+}
+.card-creation p span{
+    color: hsl(0, 0%, 100%);
+}
+@media(min-width:992px){
+    .card{
+        width: 15%;
+    }
+    .card-img{
+        cursor: pointer;
+        z-index: 1000000;
+    }
+    .card-img:hover{
+        background:url('../img/icon-view.svg') rgba(0, 255, 247 ) ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card-title h1, .card-creation p span{
+        cursor: pointer;
+        transition: color .3s;
+    }
+    .card-title h1:hover, .card-creation p span:hover{
+        color: hsl(178, 100%, 50%);
+    }
+}
