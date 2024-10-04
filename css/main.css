@@ -128,3 +128,8 @@ body {
 		width: 20%;
 	}
 }
+@media (min-width: 1600px) {
+	.card {
+		width: 15%;
+	}
+}
