@@ -123,3 +123,8 @@ body {
 		color: hsl(178, 100%, 50%);
 	}
 }
+@media (min-width:1200px){
+	.card {
+		width: 25%;
+	}
+}
